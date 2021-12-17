@@ -1,0 +1,233 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to bottom, #6699ff 0%, #ff99ff 100%)
+}
+
+a {
+  text-decoration: none;
+}
+.container{
+  justify-content: space-evenly;
+}
+
+.Tabs a:hover {
+  background-color: aqua;
+}
+.header {
+  width: 100%;
+  display: block;
+
+}
+.Logo {
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Tabs {
+
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #e1c1ff;
+  font-family:Bradley Hand, cursive;
+  width: 100%;
+  font-size: 20px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  bottom: 0%;
+  position: fixed;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-instagram {
+  .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+  color: white;
+}
+
+
+
+
+
+/**************************************************************************/
+/* css for slideshow */
+
+
+.Slideshow{
+  padding-bottom: 600px;
+  padding-top: 24px;
+}
+
+.Slideshow div {
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/************************************************************************/
+    /* columns and rows */
+
+.title {
+  text-align: center;
+  color: white;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/**********************************************************/
+/*
+{            Contact section                  */
+.Structure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+            margin: 15vh auto;
+            padding: 15px;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 0 15px rgb(180, 51, 73);
+            /* background-color: gray; */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+        }
+
+        input {
+            width: 100%;
+            margin: 5px 0;
+            height: 35px;
+            font-size: 17px;
+            text-align: center;
+            outline: none;
+            border-radius: 15px;
+            border: none;
+            background: rgb(235, 228, 228);
+        }
+
+        textarea {
+            width: 100%;
+            margin: 5px 0;
+            font-size: 17px;
+            text-align: center;
+            outline: none;
+            border-radius: 15px;
+            border: none;
+            background: rgb(235, 228, 228);
+        }
+        input[type=submit]{
+            margin: 10px auto;
+            width: 120px;
+            background: rgb(216, 31, 62);
+            color: white;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+        background: tomato;
+        }
+        @media screen and (max-width:600px) {
+            .container{
+                width: 90%;
+            }
+        }
+
+}
+/*********************************************************/
+/*                     About me section                 */

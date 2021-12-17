@@ -1,0 +1,110 @@
+
+<!-- Gabrielle lin -->
+<!-- November 15 2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabrielle Lin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Container"> <!-- this contains
+
+    <!-- first goes the header first item under container-->
+    <div class="header">
+      <a href="index.html">
+        <img src="images/Untitled_Artwork.png" alt="Gabrielle Lin's Logo" class="Logo" />
+      </a>
+    </div>
+
+    <!-- this are the tabs second item -->
+    <nav class="Tabs">
+      <a href="Fine_art.html">Fine Art</a>
+      <a href="Ilustration.html">Illustration</a>
+      <a href="About_me.html">About Me</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+
+    <!--This is the slideshow-->
+    <div class="Slideshow">
+      <div class="mySlides fade">
+        <img src="images/Illustration/AlbumCover.jpg" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/Painting/IMG_7940.jpeg" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/Photography/IMG_3099.JPG" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/Illustration/GabrielleLin_IllustratorFinal.jpg" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/Photography/IMG_4767.JPG" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/Painting/IMG_1726.JPG" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/Illustration/IMG_0535.JPG" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/Photography/DSC02257.JPG" style="width:50%">
+      </div>
+
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+    </div>
+<!-- java script for the slideshow -->
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 3 seconds
+      }
+    </script>
+
+
+    <!-- this is the footer third item-->
+    <footer>
+      <a href="https://www.instagram.com/gabrielle_studio14/" target="_blank" class="fa fa-instagram"></a>
+    </footer>
+
+  </div>
+</body>
+</html>

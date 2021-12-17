@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gabrielle Lin</title>
+                                <!-- Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ^^ this link is for the instagram Logo ^^ -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ^^ This links the css style sheet to index file ^^ -->
+    <style></style>
+  </head>
+
+  <body>
+
+    <div class="Container">
+      <!-- first goes the header first item under container-->
+      <div class="header">
+        <a href="index.html">
+          <img src="images/Untitled_Artwork.png" alt="Gabrielle Lin's Logo" class="Logo" />
+        </a>
+      </div>
+
+
+      <nav class="Tabs">
+        <a href="Fine_art.html">Fine Art</a>
+        <a href="Ilustration.html">Illustration</a>
+        <a href="About_me.html">About Me</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+
+      <div class="title">
+        <h1>Illustration</h1>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="row">
+        <div class="column">
+          <img src="/images/Illustration/43324430-016E-4C94-831B-61CE2C92F5EE.jpg" style="width:100%">
+          <img src="/images/Illustration/AlbumCover.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="/images/Illustration/GabrielleLin_IllustratorFinal.jpg" style="width:100%">
+          <img src="/images/Illustration/IMG_0917.JPG" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="images/Illustration/IMG_0535.JPG" style="width:100%">
+          <img src="images/Illustration/8FBB765D-B85C-4D72-B84D-1A0CF38C986D_1_105_c.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="images/Illustration/59316487-6D8F-492F-AFB6-5E867EC91BBA_1_105_c.jpeg" style="width:100%">
+          <img src="images/Illustration/144AB6A3-7384-45CD-9223-65F4578207B6_1_105_c.jpeg" style="width:100%">
+        </div>
+
+
+
+  <script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</div>
+
+      <!-- this is the footer third item-->
+      <footer>
+        <a href="https://www.instagram.com/gabrielle_studio14/" target="_blank" class="fa fa-instagram">
+        </a>
+      </footer>
+
+    </div>
+  </body>
+
+</html>
